@@ -28,8 +28,8 @@ func main() {
 	cmd.Env = append(cmd.Env, myEnvVars...)
 
 	// Set the process group ID to the PID of the child process
-	// I added that becaus when we run 'go run ...' code for example
-	// it will throw the a child process that is the binary, so it will add group id in process
+	// I added that because when we run 'go run ...' code for example
+	// it will throw the child process that is the binary, so it will add group id in process
 	// than we can kill the entire group process furthermore
 	cmd.SysProcAttr = &syscall.SysProcAttr{Setpgid: true}
 
@@ -47,7 +47,7 @@ func main() {
 		fmt.Printf("error on cancel the command: %v\n", err)
 	}
 
-	// this for is to mock a a infinity loop aplication withoud deadlock the main goroutine
+	// this for is to mock a infinity loop aplication withoud deadlock the main goroutine
 	for {
 		time.Sleep(5 * time.Second)
 	}

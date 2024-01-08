@@ -7,12 +7,11 @@ import (
 )
 
 func TestProject(t *testing.T) {
-
 	project := lokenv.NewProject()
 
 	project.RegisterApp(lokenv.App{
 		Name:    "users-service",
-		Workdir: "~/mockprojects/users-service",
+		WorkDir: "~/mockprojects/users-service",
 		Command: []string{"go", "run", "cmd/main.go"},
 		Env: lokenv.Variables{
 			"APP_NAME": "GO APP API REST",
