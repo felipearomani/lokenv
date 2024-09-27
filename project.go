@@ -23,8 +23,8 @@ type (
 	}
 
 	App struct {
-		pre     []*exec.Cmd
-		post    []*exec.Cmd
+		preCmd  []*exec.Cmd
+		postCmd []*exec.Cmd
 		mainCmd *exec.Cmd
 	}
 )
@@ -34,9 +34,13 @@ func NewProject() *Project {
 }
 
 func (p *Project) RegisterApp(ctx context.Context, cfg AppConfig) {
+
 	// main command
 	run, args := getCommand(cfg.RunCommand)
 	mainCmd := exec.CommandContext(ctx, run, args...)
+	mainCmd.Dir = cfg.WorkDir
+	//TODO add env
+	//TODO add stdout
 
 	app := App{
 		mainCmd: mainCmd,

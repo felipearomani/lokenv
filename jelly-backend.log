@@ -1,0 +1,496 @@
+[env:dev] ==> Merge development envVars into local .env :: API :: <==
+[env:dev] No .env.development was found in your project
+[nodemon ./src/index.ts] [33m[nodemon] 3.0.1[39m
+[nodemon ./src/index.ts] [33m[nodemon] to restart at any time, enter `rs`[39m
+[nodemon ./src/index.ts] [33m[nodemon] watching path(s): *.*[39m
+[nodemon ./src/index.ts] [33m[nodemon] watching extensions: ts,js,json[39m
+[nodemon ./src/index.ts] [32m[nodemon] starting `yarn run ts-run ./src/index.ts`[39m
+[gql:codegen:watch     ] [STARTED] Parse Configuration
+[gql:codegen:watch     ] [SUCCESS] Parse Configuration
+[gql:codegen:watch     ] [STARTED] Generate outputs
+[gql:codegen:watch     ] [STARTED] Generate to src/generated/graphql.ts
+[gql:codegen:watch     ] [STARTED] Load GraphQL schemas
+[nodemon ./src/index.ts] 11:06:56 [32minfo[39m: [KafkaLogger]: 	WARN [undefined] KafkaJS v2.0.0 switched default partitioner. To retain the same partitioning behavior as in previous versions, create the producer with the option "createPartitioner: Partitioners.LegacyPartitioner". See the migration guide at https://kafka.js.org/docs/migration-guide-v2.0.0#producer-new-default-partitioner for details. Silence this warning by setting the environment variable "KAFKAJS_NO_PARTITIONER_WARNING=1" 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafkaLogger.ts:32
+[gql:codegen:watch     ] 11:06:58 [32minfo[39m: [KafkaLogger]: 	WARN [undefined] KafkaJS v2.0.0 switched default partitioner. To retain the same partitioning behavior as in previous versions, create the producer with the option "createPartitioner: Partitioners.LegacyPartitioner". See the migration guide at https://kafka.js.org/docs/migration-guide-v2.0.0#producer-new-default-partitioner for details. Silence this warning by setting the environment variable "KAFKAJS_NO_PARTITIONER_WARNING=1" 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafkaLogger.ts:32
+[gql:codegen:watch     ] [SUCCESS] Load GraphQL schemas
+[gql:codegen:watch     ] [STARTED] Load GraphQL documents
+[gql:codegen:watch     ] [SUCCESS] Load GraphQL documents
+[gql:codegen:watch     ] [STARTED] Generate
+[nodemon ./src/index.ts] 11:07:01 [32minfo[39m: [Unknown]: 	Generated schema version hash f074f5ebd0abc5c176f9f3b2d12d3b1d8e514101 	 /Users/romani/projects/galley/jelly-backend/src/utils/schemaHash.ts:10
+[nodemon ./src/index.ts] Enabling inline tracing for this subgraph. To disable, use ApolloServerPluginInlineTraceDisabled.
+[nodemon ./src/index.ts] 11:07:01 [32minfo[39m: [makeApp]: 	Shutdown token is NOT defined, skipping shutdown endpoint creation 	 /Users/romani/projects/galley/jelly-backend/src/app.ts:184
+[nodemon ./src/index.ts] 11:07:02 [32minfo[39m: [start]: 	Are kafka brokers configured?: true 	 /Users/romani/projects/galley/jelly-backend/src/index.ts:78
+[nodemon ./src/index.ts] 11:07:02 [32minfo[39m: [start]: 	Is dev environment?: true 	 /Users/romani/projects/galley/jelly-backend/src/index.ts:79
+[nodemon ./src/index.ts] 11:07:02 [32minfo[39m: [start]: 	Starting kafka and related components ... 	 /Users/romani/projects/galley/jelly-backend/src/index.ts:81
+[nodemon ./src/index.ts] 11:07:02 [32minfo[39m: [KafkaClient.start]: 	Starting Kafka... 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafka.ts:28
+[nodemon ./src/index.ts] 11:07:02 [32minfo[39m: [AttributesCachePruner.start]: 	Starting AttributesCachePruner... 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/attributesCachePruner.ts:26
+[nodemon ./src/index.ts] 11:07:02 [32minfo[39m: [PoliciesCachePruner.start]: 	Starting PoliciesCachePruner... 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/policiesCachePruner.ts:30
+[nodemon ./src/index.ts] Process successfully started
+[nodemon ./src/index.ts] Api Express Server: Listening on 3002
+[nodemon ./src/index.ts] 11:07:02 [32minfo[39m: [KafkaLogger]: 	ERROR [Connection] Connection error: connect ECONNREFUSED ::1:9092 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafkaLogger.ts:32
+[nodemon ./src/index.ts] 11:07:02 [32minfo[39m: [KafkaLogger]: 	ERROR [BrokerPool] Failed to connect to seed broker, trying another broker from the list: Connection error: connect ECONNREFUSED ::1:9092 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafkaLogger.ts:32
+[nodemon ./src/index.ts] 11:07:02 [32minfo[39m: [KafkaLogger]: 	ERROR [Connection] Connection error: connect ECONNREFUSED ::1:9092 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafkaLogger.ts:32
+[nodemon ./src/index.ts] 11:07:02 [32minfo[39m: [KafkaLogger]: 	ERROR [BrokerPool] Failed to connect to seed broker, trying another broker from the list: Connection error: connect ECONNREFUSED ::1:9092 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafkaLogger.ts:32
+[nodemon ./src/index.ts] 11:07:02 [32minfo[39m: [KafkaLogger]: 	ERROR [Connection] Connection error: connect ECONNREFUSED ::1:9092 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafkaLogger.ts:32
+[nodemon ./src/index.ts] 11:07:02 [32minfo[39m: [KafkaLogger]: 	ERROR [BrokerPool] Failed to connect to seed broker, trying another broker from the list: Connection error: connect ECONNREFUSED ::1:9092 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafkaLogger.ts:32
+[nodemon ./src/index.ts] 11:07:02 [32minfo[39m: [KafkaLogger]: 	ERROR [Connection] Connection error: connect ECONNREFUSED ::1:9092 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafkaLogger.ts:32
+[nodemon ./src/index.ts] 11:07:02 [32minfo[39m: [KafkaLogger]: 	ERROR [BrokerPool] Failed to connect to seed broker, trying another broker from the list: Connection error: connect ECONNREFUSED ::1:9092 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafkaLogger.ts:32
+[nodemon ./src/index.ts] 11:07:02 [32minfo[39m: [KafkaLogger]: 	ERROR [Connection] Connection error: connect ECONNREFUSED ::1:9092 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafkaLogger.ts:32
+[nodemon ./src/index.ts] 11:07:02 [32minfo[39m: [KafkaLogger]: 	ERROR [BrokerPool] Failed to connect to seed broker, trying another broker from the list: Connection error: connect ECONNREFUSED ::1:9092 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafkaLogger.ts:32
+[nodemon ./src/index.ts] 11:07:02 [32minfo[39m: [KafkaLogger]: 	ERROR [Connection] Connection error: connect ECONNREFUSED ::1:9092 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafkaLogger.ts:32
+[nodemon ./src/index.ts] 11:07:02 [32minfo[39m: [KafkaLogger]: 	ERROR [BrokerPool] Failed to connect to seed broker, trying another broker from the list: Connection error: connect ECONNREFUSED ::1:9092 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafkaLogger.ts:32
+[nodemon ./src/index.ts] 11:07:02 [32minfo[39m: [KafkaLogger]: 	ERROR [Connection] Connection error: connect ECONNREFUSED ::1:9092 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafkaLogger.ts:32
+[nodemon ./src/index.ts] 11:07:02 [32minfo[39m: [KafkaLogger]: 	ERROR [BrokerPool] Failed to connect to seed broker, trying another broker from the list: Connection error: connect ECONNREFUSED ::1:9092 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafkaLogger.ts:32
+[nodemon ./src/index.ts] 11:07:02 [32minfo[39m: [KafkaLogger]: 	ERROR [Connection] Connection error: connect ECONNREFUSED ::1:9092 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafkaLogger.ts:32
+[nodemon ./src/index.ts] 11:07:02 [32minfo[39m: [KafkaLogger]: 	ERROR [BrokerPool] Failed to connect to seed broker, trying another broker from the list: Connection error: connect ECONNREFUSED ::1:9092 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafkaLogger.ts:32
+[nodemon ./src/index.ts] 11:07:02 [32minfo[39m: [KafkaLogger]: 	ERROR [Connection] Connection error: connect ECONNREFUSED ::1:9092 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafkaLogger.ts:32
+[nodemon ./src/index.ts] 11:07:02 [32minfo[39m: [KafkaLogger]: 	ERROR [BrokerPool] Failed to connect to seed broker, trying another broker from the list: Connection error: connect ECONNREFUSED ::1:9092 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafkaLogger.ts:32
+[nodemon ./src/index.ts] 11:07:02 [32minfo[39m: [KafkaLogger]: 	ERROR [Connection] Connection error: connect ECONNREFUSED ::1:9092 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafkaLogger.ts:32
+[nodemon ./src/index.ts] 11:07:02 [32minfo[39m: [KafkaLogger]: 	ERROR [BrokerPool] Failed to connect to seed broker, trying another broker from the list: Connection error: connect ECONNREFUSED ::1:9092 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafkaLogger.ts:32
+[gql:codegen:watch     ] [SUCCESS] Generate
+[gql:codegen:watch     ] [SUCCESS] Generate to src/generated/graphql.ts
+[gql:codegen:watch     ] [SUCCESS] Generate outputs
+[nodemon ./src/index.ts] [32m[nodemon] restarting due to changes...[39m
+[nodemon ./src/index.ts] [32m[nodemon] starting `yarn run ts-run ./src/index.ts`[39m
+[nodemon ./src/index.ts] [32m[nodemon] restarting due to changes...[39m
+[gql:codegen:watch     ]   Parcel watcher not found. To use this feature, please make sure to provide @parcel/watcher as a peer dependency.
+[nodemon ./src/index.ts] [32m[nodemon] starting `yarn run ts-run ./src/index.ts`[39m
+[nodemon ./src/index.ts] 11:07:05 [32minfo[39m: [KafkaLogger]: 	WARN [undefined] KafkaJS v2.0.0 switched default partitioner. To retain the same partitioning behavior as in previous versions, create the producer with the option "createPartitioner: Partitioners.LegacyPartitioner". See the migration guide at https://kafka.js.org/docs/migration-guide-v2.0.0#producer-new-default-partitioner for details. Silence this warning by setting the environment variable "KAFKAJS_NO_PARTITIONER_WARNING=1" 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafkaLogger.ts:32
+[nodemon ./src/index.ts] 11:07:10 [32minfo[39m: [Unknown]: 	Generated schema version hash f074f5ebd0abc5c176f9f3b2d12d3b1d8e514101 	 /Users/romani/projects/galley/jelly-backend/src/utils/schemaHash.ts:10
+[nodemon ./src/index.ts] Enabling inline tracing for this subgraph. To disable, use ApolloServerPluginInlineTraceDisabled.
+[nodemon ./src/index.ts] 11:07:10 [32minfo[39m: [makeApp]: 	Shutdown token is NOT defined, skipping shutdown endpoint creation 	 /Users/romani/projects/galley/jelly-backend/src/app.ts:184
+[nodemon ./src/index.ts] 11:07:10 [32minfo[39m: [start]: 	Are kafka brokers configured?: true 	 /Users/romani/projects/galley/jelly-backend/src/index.ts:78
+[nodemon ./src/index.ts] 11:07:10 [32minfo[39m: [start]: 	Is dev environment?: true 	 /Users/romani/projects/galley/jelly-backend/src/index.ts:79
+[nodemon ./src/index.ts] 11:07:10 [32minfo[39m: [start]: 	Starting kafka and related components ... 	 /Users/romani/projects/galley/jelly-backend/src/index.ts:81
+[nodemon ./src/index.ts] 11:07:10 [32minfo[39m: [KafkaClient.start]: 	Starting Kafka... 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafka.ts:28
+[nodemon ./src/index.ts] 11:07:10 [32minfo[39m: [AttributesCachePruner.start]: 	Starting AttributesCachePruner... 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/attributesCachePruner.ts:26
+[nodemon ./src/index.ts] 11:07:10 [32minfo[39m: [PoliciesCachePruner.start]: 	Starting PoliciesCachePruner... 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/policiesCachePruner.ts:30
+[nodemon ./src/index.ts] Process successfully started
+[nodemon ./src/index.ts] 11:07:10 [32minfo[39m: [Unknown]: 	Process exited 	 /Users/romani/projects/galley/jelly-backend/src/index.ts:100
+[nodemon ./src/index.ts] Error: listen EADDRINUSE: address already in use :::3002
+[nodemon ./src/index.ts]     at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+[nodemon ./src/index.ts]     at listenInCluster (node:net:1865:12)
+[nodemon ./src/index.ts]     at Server.listen (node:net:1953:7)
+[nodemon ./src/index.ts]     at Function.listen (/Users/romani/projects/galley/jelly-backend/node_modules/express/lib/application.js:635:24)
+[nodemon ./src/index.ts]     at start (/Users/romani/projects/galley/jelly-backend/src/index.ts:50:6)
+[nodemon ./src/index.ts]     at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+[nodemon ./src/index.ts]   code: 'EADDRINUSE',
+[nodemon ./src/index.ts]   errno: -48,
+[nodemon ./src/index.ts]   syscall: 'listen',
+[nodemon ./src/index.ts]   address: '::',
+[nodemon ./src/index.ts]   port: 3002
+[nodemon ./src/index.ts] }
+[nodemon ./src/index.ts] [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[nodemon ./src/index.ts] [32m[nodemon] restarting due to changes...[39m
+[nodemon ./src/index.ts] [32m[nodemon] starting `yarn run ts-run ./src/index.ts`[39m
+[nodemon ./src/index.ts] [32m[nodemon] restarting due to changes...[39m
+[nodemon ./src/index.ts] [32m[nodemon] starting `yarn run ts-run ./src/index.ts`[39m
+[nodemon ./src/index.ts] 13:55:57 [32minfo[39m: [KafkaLogger]: 	WARN [undefined] KafkaJS v2.0.0 switched default partitioner. To retain the same partitioning behavior as in previous versions, create the producer with the option "createPartitioner: Partitioners.LegacyPartitioner". See the migration guide at https://kafka.js.org/docs/migration-guide-v2.0.0#producer-new-default-partitioner for details. Silence this warning by setting the environment variable "KAFKAJS_NO_PARTITIONER_WARNING=1" 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafkaLogger.ts:32
+[nodemon ./src/index.ts] 13:56:05 [32minfo[39m: [Unknown]: 	Generated schema version hash f074f5ebd0abc5c176f9f3b2d12d3b1d8e514101 	 /Users/romani/projects/galley/jelly-backend/src/utils/schemaHash.ts:10
+[nodemon ./src/index.ts] Enabling inline tracing for this subgraph. To disable, use ApolloServerPluginInlineTraceDisabled.
+[nodemon ./src/index.ts] 13:56:05 [32minfo[39m: [makeApp]: 	Shutdown token is NOT defined, skipping shutdown endpoint creation 	 /Users/romani/projects/galley/jelly-backend/src/app.ts:184
+[nodemon ./src/index.ts] 13:56:05 [32minfo[39m: [start]: 	Are kafka brokers configured?: true 	 /Users/romani/projects/galley/jelly-backend/src/index.ts:78
+[nodemon ./src/index.ts] 13:56:05 [32minfo[39m: [start]: 	Is dev environment?: true 	 /Users/romani/projects/galley/jelly-backend/src/index.ts:79
+[nodemon ./src/index.ts] 13:56:05 [32minfo[39m: [start]: 	Starting kafka and related components ... 	 /Users/romani/projects/galley/jelly-backend/src/index.ts:81
+[nodemon ./src/index.ts] 13:56:05 [32minfo[39m: [KafkaClient.start]: 	Starting Kafka... 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafka.ts:28
+[nodemon ./src/index.ts] 13:56:05 [32minfo[39m: [AttributesCachePruner.start]: 	Starting AttributesCachePruner... 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/attributesCachePruner.ts:26
+[nodemon ./src/index.ts] 13:56:05 [32minfo[39m: [PoliciesCachePruner.start]: 	Starting PoliciesCachePruner... 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/policiesCachePruner.ts:30
+[nodemon ./src/index.ts] Process successfully started
+[nodemon ./src/index.ts] Api Express Server: Listening on 3002
+[nodemon ./src/index.ts] 13:56:05 [32minfo[39m: [KafkaLogger]: 	INFO [Consumer] Starting 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafkaLogger.ts:32
+[nodemon ./src/index.ts] 13:56:05 [32minfo[39m: [KafkaLogger]: 	INFO [Consumer] Starting 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafkaLogger.ts:32
+[nodemon ./src/index.ts] 13:56:05 [32minfo[39m: [KafkaLogger]: 	INFO [ConsumerGroup] Consumer has joined the group 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafkaLogger.ts:32
+[nodemon ./src/index.ts] 13:56:05 [32minfo[39m: [KafkaLogger]: 	INFO [ConsumerGroup] Consumer has joined the group 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafkaLogger.ts:32
+[nodemon ./src/index.ts] 13:58:51 [32minfo[39m: [handleTerminationSignal]: 	Termination signal SIGTERM has been received. Closing server ... 	 /Users/romani/projects/galley/jelly-backend/src/index.ts:30
+[nodemon ./src/index.ts] 13:58:51 [32minfo[39m: [handleTerminationSignal]: 	Shutdown has been requested ... 	 /Users/romani/projects/galley/jelly-backend/src/index.ts:33
+[nodemon ./src/index.ts] 13:58:51 [32minfo[39m: [GracefulTerminator.execute]: 	Gracefully terminating app ... 	 /Users/romani/projects/galley/jelly-backend/src/GracefulTerminator.ts:34
+[nodemon ./src/index.ts] 13:58:51 [32minfo[39m: [GracefulTerminator.execute]: 	Terminating all HTTP connections ... 	 /Users/romani/projects/galley/jelly-backend/src/GracefulTerminator.ts:39
+[nodemon ./src/index.ts] 13:58:51 [32minfo[39m: [terminateHttpConnections]: 	Waiting 30000 milliseconds before closing idle client sockets ... 	 /Users/romani/projects/galley/jelly-backend/src/httpConnectionsTermination.ts:132
+[nodemon ./src/index.ts] 13:59:02 [32minfo[39m: [handleTerminationSignal]: 	Termination signal SIGTERM has been received. Closing server ... 	 /Users/romani/projects/galley/jelly-backend/src/index.ts:30
+[nodemon ./src/index.ts] 13:59:02 [32minfo[39m: [handleTerminationSignal]: 	Shutdown has been requested ... 	 /Users/romani/projects/galley/jelly-backend/src/index.ts:33
+[nodemon ./src/index.ts] 13:59:02 [32minfo[39m: [GracefulTerminator.execute]: 	Gracefully terminating app ... 	 /Users/romani/projects/galley/jelly-backend/src/GracefulTerminator.ts:34
+[nodemon ./src/index.ts] 13:59:02 [32minfo[39m: [GracefulTerminator.execute]: 	Terminating all HTTP connections ... 	 /Users/romani/projects/galley/jelly-backend/src/GracefulTerminator.ts:39
+[nodemon ./src/index.ts] 13:59:02 [32minfo[39m: [terminateHttpConnections]: 	Waiting 30000 milliseconds before closing idle client sockets ... 	 /Users/romani/projects/galley/jelly-backend/src/httpConnectionsTermination.ts:132
+[nodemon ./src/index.ts] 13:59:21 [32minfo[39m: [terminateHttpConnections]: 	Closing idle client sockets without pending requests... 	 /Users/romani/projects/galley/jelly-backend/src/httpConnectionsTermination.ts:136
+[nodemon ./src/index.ts] 13:59:21 [32minfo[39m: [GracefulTerminator.execute]: 	Waiting 10000 milliseconds before checking if the internal event queue pending events listeners was invoked ... 	 /Users/romani/projects/galley/jelly-backend/src/GracefulTerminator.ts:55
+[nodemon ./src/index.ts] 13:59:31 [32minfo[39m: [GracefulTerminator.execute]: 	After 10000 milliseconds the internal event queue pending events listener wasn't invoked. There are 0 pending events 	 /Users/romani/projects/galley/jelly-backend/src/GracefulTerminator.ts:71
+[nodemon ./src/index.ts] 13:59:31 [32minfo[39m: [GracefulTerminator.execute]: 	Disconnecting from Kafka ... 	 /Users/romani/projects/galley/jelly-backend/src/GracefulTerminator.ts:75
+[nodemon ./src/index.ts] 13:59:31 [32minfo[39m: [KafkaClient.stop]: 	Disconnecting Kafka... 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafka.ts:37
+[nodemon ./src/index.ts] 13:59:31 [32minfo[39m: [GracefulTerminator.execute]: 	Closing sequelize ... 	 /Users/romani/projects/galley/jelly-backend/src/GracefulTerminator.ts:79
+[nodemon ./src/index.ts] 13:59:31 [32minfo[39m: [GracefulTerminator.execute]: 	Application gracefully terminated. 	 /Users/romani/projects/galley/jelly-backend/src/GracefulTerminator.ts:81
+[nodemon ./src/index.ts] 13:59:31 [32minfo[39m: [handleTerminationSignal]: 	Shutdown request has been successfully performed 	 /Users/romani/projects/galley/jelly-backend/src/index.ts:35
+[nodemon ./src/index.ts] 13:59:31 [32minfo[39m: [Unknown]: 	Server closed 	 /Users/romani/projects/galley/jelly-backend/src/index.ts:41
+[nodemon ./src/index.ts] 13:59:31 [32minfo[39m: [Unknown]: 	Process exited 	 /Users/romani/projects/galley/jelly-backend/src/index.ts:100
+[nodemon ./src/index.ts] [32m[nodemon] clean exit - waiting for changes before restart[39m
+[nodemon ./src/index.ts] [32m[nodemon] restarting due to changes...[39m
+[nodemon ./src/index.ts] [32m[nodemon] starting `yarn run ts-run ./src/index.ts`[39m
+[nodemon ./src/index.ts] [32m[nodemon] restarting due to changes...[39m
+[nodemon ./src/index.ts] [32m[nodemon] starting `yarn run ts-run ./src/index.ts`[39m
+[nodemon ./src/index.ts] 14:00:01 [32minfo[39m: [KafkaLogger]: 	WARN [undefined] KafkaJS v2.0.0 switched default partitioner. To retain the same partitioning behavior as in previous versions, create the producer with the option "createPartitioner: Partitioners.LegacyPartitioner". See the migration guide at https://kafka.js.org/docs/migration-guide-v2.0.0#producer-new-default-partitioner for details. Silence this warning by setting the environment variable "KAFKAJS_NO_PARTITIONER_WARNING=1" 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafkaLogger.ts:32
+[nodemon ./src/index.ts] 14:00:07 [32minfo[39m: [Unknown]: 	Generated schema version hash f074f5ebd0abc5c176f9f3b2d12d3b1d8e514101 	 /Users/romani/projects/galley/jelly-backend/src/utils/schemaHash.ts:10
+[nodemon ./src/index.ts] Enabling inline tracing for this subgraph. To disable, use ApolloServerPluginInlineTraceDisabled.
+[nodemon ./src/index.ts] 14:00:08 [32minfo[39m: [makeApp]: 	Shutdown token is NOT defined, skipping shutdown endpoint creation 	 /Users/romani/projects/galley/jelly-backend/src/app.ts:184
+[nodemon ./src/index.ts] 14:00:08 [32minfo[39m: [start]: 	Are kafka brokers configured?: true 	 /Users/romani/projects/galley/jelly-backend/src/index.ts:78
+[nodemon ./src/index.ts] 14:00:08 [32minfo[39m: [start]: 	Is dev environment?: true 	 /Users/romani/projects/galley/jelly-backend/src/index.ts:79
+[nodemon ./src/index.ts] 14:00:08 [32minfo[39m: [start]: 	Starting kafka and related components ... 	 /Users/romani/projects/galley/jelly-backend/src/index.ts:81
+[nodemon ./src/index.ts] 14:00:08 [32minfo[39m: [KafkaClient.start]: 	Starting Kafka... 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafka.ts:28
+[nodemon ./src/index.ts] 14:00:08 [32minfo[39m: [AttributesCachePruner.start]: 	Starting AttributesCachePruner... 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/attributesCachePruner.ts:26
+[nodemon ./src/index.ts] 14:00:08 [32minfo[39m: [PoliciesCachePruner.start]: 	Starting PoliciesCachePruner... 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/policiesCachePruner.ts:30
+[nodemon ./src/index.ts] Process successfully started
+[nodemon ./src/index.ts] Api Express Server: Listening on 3002
+[nodemon ./src/index.ts] 14:00:08 [32minfo[39m: [KafkaLogger]: 	INFO [Consumer] Starting 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafkaLogger.ts:32
+[nodemon ./src/index.ts] 14:00:08 [32minfo[39m: [KafkaLogger]: 	INFO [Consumer] Starting 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafkaLogger.ts:32
+[nodemon ./src/index.ts] 14:00:08 [32minfo[39m: [KafkaLogger]: 	INFO [ConsumerGroup] Consumer has joined the group 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafkaLogger.ts:32
+[nodemon ./src/index.ts] 14:00:08 [32minfo[39m: [KafkaLogger]: 	INFO [ConsumerGroup] Consumer has joined the group 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafkaLogger.ts:32
+[nodemon ./src/index.ts] [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[nodemon ./src/index.ts] [32m[nodemon] restarting due to changes...[39m
+[nodemon ./src/index.ts] [32m[nodemon] starting `yarn run ts-run ./src/index.ts`[39m
+[nodemon ./src/index.ts] [32m[nodemon] restarting due to changes...[39m
+[nodemon ./src/index.ts] [32m[nodemon] starting `yarn run ts-run ./src/index.ts`[39m
+[nodemon ./src/index.ts] 14:00:44 [32minfo[39m: [KafkaLogger]: 	WARN [undefined] KafkaJS v2.0.0 switched default partitioner. To retain the same partitioning behavior as in previous versions, create the producer with the option "createPartitioner: Partitioners.LegacyPartitioner". See the migration guide at https://kafka.js.org/docs/migration-guide-v2.0.0#producer-new-default-partitioner for details. Silence this warning by setting the environment variable "KAFKAJS_NO_PARTITIONER_WARNING=1" 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafkaLogger.ts:32
+[nodemon ./src/index.ts] 14:00:51 [32minfo[39m: [Unknown]: 	Generated schema version hash f074f5ebd0abc5c176f9f3b2d12d3b1d8e514101 	 /Users/romani/projects/galley/jelly-backend/src/utils/schemaHash.ts:10
+[nodemon ./src/index.ts] Enabling inline tracing for this subgraph. To disable, use ApolloServerPluginInlineTraceDisabled.
+[nodemon ./src/index.ts] 14:00:51 [32minfo[39m: [makeApp]: 	Shutdown token is NOT defined, skipping shutdown endpoint creation 	 /Users/romani/projects/galley/jelly-backend/src/app.ts:184
+[nodemon ./src/index.ts] 14:00:51 [32minfo[39m: [start]: 	Are kafka brokers configured?: true 	 /Users/romani/projects/galley/jelly-backend/src/index.ts:78
+[nodemon ./src/index.ts] 14:00:51 [32minfo[39m: [start]: 	Is dev environment?: true 	 /Users/romani/projects/galley/jelly-backend/src/index.ts:79
+[nodemon ./src/index.ts] 14:00:51 [32minfo[39m: [start]: 	Starting kafka and related components ... 	 /Users/romani/projects/galley/jelly-backend/src/index.ts:81
+[nodemon ./src/index.ts] 14:00:51 [32minfo[39m: [KafkaClient.start]: 	Starting Kafka... 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafka.ts:28
+[nodemon ./src/index.ts] 14:00:51 [32minfo[39m: [AttributesCachePruner.start]: 	Starting AttributesCachePruner... 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/attributesCachePruner.ts:26
+[nodemon ./src/index.ts] 14:00:51 [32minfo[39m: [PoliciesCachePruner.start]: 	Starting PoliciesCachePruner... 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/policiesCachePruner.ts:30
+[nodemon ./src/index.ts] Process successfully started
+[nodemon ./src/index.ts] Api Express Server: Listening on 3002
+[nodemon ./src/index.ts] 14:00:51 [32minfo[39m: [KafkaLogger]: 	INFO [Consumer] Starting 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafkaLogger.ts:32
+[nodemon ./src/index.ts] 14:00:51 [32minfo[39m: [KafkaLogger]: 	INFO [Consumer] Starting 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafkaLogger.ts:32
+[nodemon ./src/index.ts] 14:00:51 [32minfo[39m: [KafkaLogger]: 	INFO [ConsumerGroup] Consumer has joined the group 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafkaLogger.ts:32
+[nodemon ./src/index.ts] 14:00:51 [32minfo[39m: [KafkaLogger]: 	INFO [ConsumerGroup] Consumer has joined the group 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafkaLogger.ts:32
+[nodemon ./src/index.ts] 14:04:21 [32minfo[39m: [handleTerminationSignal]: 	Termination signal SIGTERM has been received. Closing server ... 	 /Users/romani/projects/galley/jelly-backend/src/index.ts:30
+[nodemon ./src/index.ts] 14:04:21 [32minfo[39m: [handleTerminationSignal]: 	Shutdown has been requested ... 	 /Users/romani/projects/galley/jelly-backend/src/index.ts:33
+[nodemon ./src/index.ts] 14:04:21 [32minfo[39m: [GracefulTerminator.execute]: 	Gracefully terminating app ... 	 /Users/romani/projects/galley/jelly-backend/src/GracefulTerminator.ts:34
+[nodemon ./src/index.ts] 14:04:21 [32minfo[39m: [GracefulTerminator.execute]: 	Terminating all HTTP connections ... 	 /Users/romani/projects/galley/jelly-backend/src/GracefulTerminator.ts:39
+[nodemon ./src/index.ts] 14:04:21 [32minfo[39m: [terminateHttpConnections]: 	Waiting 30000 milliseconds before closing idle client sockets ... 	 /Users/romani/projects/galley/jelly-backend/src/httpConnectionsTermination.ts:132
+[nodemon ./src/index.ts] 14:04:51 [32minfo[39m: [terminateHttpConnections]: 	Closing idle client sockets without pending requests... 	 /Users/romani/projects/galley/jelly-backend/src/httpConnectionsTermination.ts:136
+[nodemon ./src/index.ts] 14:04:51 [32minfo[39m: [GracefulTerminator.execute]: 	Waiting 10000 milliseconds before checking if the internal event queue pending events listeners was invoked ... 	 /Users/romani/projects/galley/jelly-backend/src/GracefulTerminator.ts:55
+[nodemon ./src/index.ts] 14:05:01 [32minfo[39m: [GracefulTerminator.execute]: 	After 10000 milliseconds the internal event queue pending events listener wasn't invoked. There are 0 pending events 	 /Users/romani/projects/galley/jelly-backend/src/GracefulTerminator.ts:71
+[nodemon ./src/index.ts] 14:05:01 [32minfo[39m: [GracefulTerminator.execute]: 	Disconnecting from Kafka ... 	 /Users/romani/projects/galley/jelly-backend/src/GracefulTerminator.ts:75
+[nodemon ./src/index.ts] 14:05:01 [32minfo[39m: [KafkaClient.stop]: 	Disconnecting Kafka... 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafka.ts:37
+[nodemon ./src/index.ts] 14:05:01 [32minfo[39m: [GracefulTerminator.execute]: 	Closing sequelize ... 	 /Users/romani/projects/galley/jelly-backend/src/GracefulTerminator.ts:79
+[nodemon ./src/index.ts] 14:05:01 [32minfo[39m: [GracefulTerminator.execute]: 	Application gracefully terminated. 	 /Users/romani/projects/galley/jelly-backend/src/GracefulTerminator.ts:81
+[nodemon ./src/index.ts] 14:05:01 [32minfo[39m: [handleTerminationSignal]: 	Shutdown request has been successfully performed 	 /Users/romani/projects/galley/jelly-backend/src/index.ts:35
+[nodemon ./src/index.ts] 14:05:01 [32minfo[39m: [Unknown]: 	Server closed 	 /Users/romani/projects/galley/jelly-backend/src/index.ts:41
+[nodemon ./src/index.ts] 14:05:01 [32minfo[39m: [Unknown]: 	Process exited 	 /Users/romani/projects/galley/jelly-backend/src/index.ts:100
+[nodemon ./src/index.ts] [32m[nodemon] clean exit - waiting for changes before restart[39m
+[nodemon ./src/index.ts] [32m[nodemon] restarting due to changes...[39m
+[nodemon ./src/index.ts] [32m[nodemon] starting `yarn run ts-run ./src/index.ts`[39m
+[nodemon ./src/index.ts] [32m[nodemon] restarting due to changes...[39m
+[nodemon ./src/index.ts] [32m[nodemon] starting `yarn run ts-run ./src/index.ts`[39m
+[nodemon ./src/index.ts] 14:07:31 [32minfo[39m: [KafkaLogger]: 	WARN [undefined] KafkaJS v2.0.0 switched default partitioner. To retain the same partitioning behavior as in previous versions, create the producer with the option "createPartitioner: Partitioners.LegacyPartitioner". See the migration guide at https://kafka.js.org/docs/migration-guide-v2.0.0#producer-new-default-partitioner for details. Silence this warning by setting the environment variable "KAFKAJS_NO_PARTITIONER_WARNING=1" 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafkaLogger.ts:32
+[nodemon ./src/index.ts] 14:07:38 [32minfo[39m: [Unknown]: 	Generated schema version hash f074f5ebd0abc5c176f9f3b2d12d3b1d8e514101 	 /Users/romani/projects/galley/jelly-backend/src/utils/schemaHash.ts:10
+[nodemon ./src/index.ts] Enabling inline tracing for this subgraph. To disable, use ApolloServerPluginInlineTraceDisabled.
+[nodemon ./src/index.ts] 14:07:38 [32minfo[39m: [makeApp]: 	Shutdown token is NOT defined, skipping shutdown endpoint creation 	 /Users/romani/projects/galley/jelly-backend/src/app.ts:184
+[nodemon ./src/index.ts] 14:07:38 [32minfo[39m: [start]: 	Are kafka brokers configured?: true 	 /Users/romani/projects/galley/jelly-backend/src/index.ts:78
+[nodemon ./src/index.ts] 14:07:38 [32minfo[39m: [start]: 	Is dev environment?: true 	 /Users/romani/projects/galley/jelly-backend/src/index.ts:79
+[nodemon ./src/index.ts] 14:07:38 [32minfo[39m: [start]: 	Starting kafka and related components ... 	 /Users/romani/projects/galley/jelly-backend/src/index.ts:81
+[nodemon ./src/index.ts] 14:07:38 [32minfo[39m: [KafkaClient.start]: 	Starting Kafka... 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafka.ts:28
+[nodemon ./src/index.ts] 14:07:38 [32minfo[39m: [AttributesCachePruner.start]: 	Starting AttributesCachePruner... 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/attributesCachePruner.ts:26
+[nodemon ./src/index.ts] 14:07:38 [32minfo[39m: [PoliciesCachePruner.start]: 	Starting PoliciesCachePruner... 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/policiesCachePruner.ts:30
+[nodemon ./src/index.ts] Process successfully started
+[nodemon ./src/index.ts] Api Express Server: Listening on 3002
+[nodemon ./src/index.ts] 14:07:38 [32minfo[39m: [KafkaLogger]: 	INFO [Consumer] Starting 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafkaLogger.ts:32
+[nodemon ./src/index.ts] 14:07:38 [32minfo[39m: [KafkaLogger]: 	INFO [Consumer] Starting 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafkaLogger.ts:32
+[nodemon ./src/index.ts] 14:07:39 [32minfo[39m: [KafkaLogger]: 	INFO [ConsumerGroup] Consumer has joined the group 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafkaLogger.ts:32
+[nodemon ./src/index.ts] 14:07:39 [32minfo[39m: [KafkaLogger]: 	INFO [ConsumerGroup] Consumer has joined the group 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafkaLogger.ts:32
+[nodemon ./src/index.ts] [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[nodemon ./src/index.ts] [32m[nodemon] restarting due to changes...[39m
+[nodemon ./src/index.ts] [32m[nodemon] starting `yarn run ts-run ./src/index.ts`[39m
+[nodemon ./src/index.ts] [32m[nodemon] restarting due to changes...[39m
+[nodemon ./src/index.ts] [32m[nodemon] starting `yarn run ts-run ./src/index.ts`[39m
+[nodemon ./src/index.ts] 14:12:16 [32minfo[39m: [KafkaLogger]: 	WARN [undefined] KafkaJS v2.0.0 switched default partitioner. To retain the same partitioning behavior as in previous versions, create the producer with the option "createPartitioner: Partitioners.LegacyPartitioner". See the migration guide at https://kafka.js.org/docs/migration-guide-v2.0.0#producer-new-default-partitioner for details. Silence this warning by setting the environment variable "KAFKAJS_NO_PARTITIONER_WARNING=1" 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafkaLogger.ts:32
+[nodemon ./src/index.ts] 14:12:22 [32minfo[39m: [Unknown]: 	Generated schema version hash f074f5ebd0abc5c176f9f3b2d12d3b1d8e514101 	 /Users/romani/projects/galley/jelly-backend/src/utils/schemaHash.ts:10
+[nodemon ./src/index.ts] Enabling inline tracing for this subgraph. To disable, use ApolloServerPluginInlineTraceDisabled.
+[nodemon ./src/index.ts] 14:12:22 [32minfo[39m: [makeApp]: 	Shutdown token is NOT defined, skipping shutdown endpoint creation 	 /Users/romani/projects/galley/jelly-backend/src/app.ts:184
+[nodemon ./src/index.ts] 14:12:22 [32minfo[39m: [start]: 	Are kafka brokers configured?: true 	 /Users/romani/projects/galley/jelly-backend/src/index.ts:78
+[nodemon ./src/index.ts] 14:12:22 [32minfo[39m: [start]: 	Is dev environment?: true 	 /Users/romani/projects/galley/jelly-backend/src/index.ts:79
+[nodemon ./src/index.ts] 14:12:22 [32minfo[39m: [start]: 	Starting kafka and related components ... 	 /Users/romani/projects/galley/jelly-backend/src/index.ts:81
+[nodemon ./src/index.ts] 14:12:22 [32minfo[39m: [KafkaClient.start]: 	Starting Kafka... 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafka.ts:28
+[nodemon ./src/index.ts] 14:12:22 [32minfo[39m: [AttributesCachePruner.start]: 	Starting AttributesCachePruner... 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/attributesCachePruner.ts:26
+[nodemon ./src/index.ts] 14:12:22 [32minfo[39m: [PoliciesCachePruner.start]: 	Starting PoliciesCachePruner... 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/policiesCachePruner.ts:30
+[nodemon ./src/index.ts] Process successfully started
+[nodemon ./src/index.ts] 14:12:22 [32minfo[39m: [Unknown]: 	Process exited 	 /Users/romani/projects/galley/jelly-backend/src/index.ts:100
+[nodemon ./src/index.ts] Error: listen EADDRINUSE: address already in use :::3002
+[nodemon ./src/index.ts]     at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+[nodemon ./src/index.ts]     at listenInCluster (node:net:1865:12)
+[nodemon ./src/index.ts]     at Server.listen (node:net:1953:7)
+[nodemon ./src/index.ts]     at Function.listen (/Users/romani/projects/galley/jelly-backend/node_modules/express/lib/application.js:635:24)
+[nodemon ./src/index.ts]     at start (/Users/romani/projects/galley/jelly-backend/src/index.ts:50:6)
+[nodemon ./src/index.ts]     at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+[nodemon ./src/index.ts]   code: 'EADDRINUSE',
+[nodemon ./src/index.ts]   errno: -48,
+[nodemon ./src/index.ts]   syscall: 'listen',
+[nodemon ./src/index.ts]   address: '::',
+[nodemon ./src/index.ts]   port: 3002
+[nodemon ./src/index.ts] }
+[nodemon ./src/index.ts] [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[nodemon ./src/index.ts] [32m[nodemon] restarting due to changes...[39m
+[nodemon ./src/index.ts] [32m[nodemon] starting `yarn run ts-run ./src/index.ts`[39m
+[nodemon ./src/index.ts] [32m[nodemon] restarting due to changes...[39m
+[nodemon ./src/index.ts] [32m[nodemon] starting `yarn run ts-run ./src/index.ts`[39m
+[nodemon ./src/index.ts] 16:55:54 [32minfo[39m: [KafkaLogger]: 	WARN [undefined] KafkaJS v2.0.0 switched default partitioner. To retain the same partitioning behavior as in previous versions, create the producer with the option "createPartitioner: Partitioners.LegacyPartitioner". See the migration guide at https://kafka.js.org/docs/migration-guide-v2.0.0#producer-new-default-partitioner for details. Silence this warning by setting the environment variable "KAFKAJS_NO_PARTITIONER_WARNING=1" 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafkaLogger.ts:32
+[nodemon ./src/index.ts] 16:56:02 [32minfo[39m: [Unknown]: 	Generated schema version hash f074f5ebd0abc5c176f9f3b2d12d3b1d8e514101 	 /Users/romani/projects/galley/jelly-backend/src/utils/schemaHash.ts:10
+[nodemon ./src/index.ts] Enabling inline tracing for this subgraph. To disable, use ApolloServerPluginInlineTraceDisabled.
+[nodemon ./src/index.ts] 16:56:02 [32minfo[39m: [makeApp]: 	Shutdown token is NOT defined, skipping shutdown endpoint creation 	 /Users/romani/projects/galley/jelly-backend/src/app.ts:184
+[nodemon ./src/index.ts] 16:56:02 [32minfo[39m: [start]: 	Are kafka brokers configured?: true 	 /Users/romani/projects/galley/jelly-backend/src/index.ts:78
+[nodemon ./src/index.ts] 16:56:02 [32minfo[39m: [start]: 	Is dev environment?: true 	 /Users/romani/projects/galley/jelly-backend/src/index.ts:79
+[nodemon ./src/index.ts] 16:56:02 [32minfo[39m: [start]: 	Starting kafka and related components ... 	 /Users/romani/projects/galley/jelly-backend/src/index.ts:81
+[nodemon ./src/index.ts] 16:56:02 [32minfo[39m: [KafkaClient.start]: 	Starting Kafka... 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafka.ts:28
+[nodemon ./src/index.ts] 16:56:02 [32minfo[39m: [AttributesCachePruner.start]: 	Starting AttributesCachePruner... 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/attributesCachePruner.ts:26
+[nodemon ./src/index.ts] 16:56:02 [32minfo[39m: [PoliciesCachePruner.start]: 	Starting PoliciesCachePruner... 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/policiesCachePruner.ts:30
+[nodemon ./src/index.ts] Process successfully started
+[nodemon ./src/index.ts] Api Express Server: Listening on 3002
+[nodemon ./src/index.ts] 16:56:02 [32minfo[39m: [KafkaLogger]: 	INFO [Consumer] Starting 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafkaLogger.ts:32
+[nodemon ./src/index.ts] 16:56:02 [32minfo[39m: [KafkaLogger]: 	INFO [Consumer] Starting 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafkaLogger.ts:32
+[nodemon ./src/index.ts] 16:56:03 [32minfo[39m: [KafkaLogger]: 	INFO [ConsumerGroup] Consumer has joined the group 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafkaLogger.ts:32
+[nodemon ./src/index.ts] 16:56:03 [32minfo[39m: [KafkaLogger]: 	INFO [ConsumerGroup] Consumer has joined the group 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafkaLogger.ts:32
+[nodemon ./src/index.ts] 17:09:03 [32minfo[39m: [KafkaLogger]: 	ERROR [Connection] Connection error: connect ECONNREFUSED ::1:9092 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafkaLogger.ts:32
+[nodemon ./src/index.ts] 17:09:03 [32minfo[39m: [KafkaLogger]: 	ERROR [Connection] Connection error: connect ECONNREFUSED ::1:9092 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafkaLogger.ts:32
+[nodemon ./src/index.ts] 17:09:04 [32minfo[39m: [KafkaLogger]: 	ERROR [Consumer] Crash: KafkaJSNoBrokerAvailableError: No broker available 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafkaLogger.ts:32
+[nodemon ./src/index.ts] 17:09:04 [32minfo[39m: [KafkaLogger]: 	ERROR [Connection] Connection error: connect ECONNREFUSED ::1:9092 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafkaLogger.ts:32
+[nodemon ./src/index.ts] 17:09:04 [32minfo[39m: [KafkaLogger]: 	INFO [Consumer] Stopped 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafkaLogger.ts:32
+[nodemon ./src/index.ts] 17:09:04 [32minfo[39m: [KafkaLogger]: 	ERROR [Consumer] Restarting the consumer in 350ms 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafkaLogger.ts:32
+[nodemon ./src/index.ts] 17:09:04 [32minfo[39m: [KafkaLogger]: 	ERROR [Consumer] Crash: KafkaJSNoBrokerAvailableError: No broker available 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafkaLogger.ts:32
+[nodemon ./src/index.ts] 17:09:04 [32minfo[39m: [KafkaLogger]: 	ERROR [Connection] Connection error: connect ECONNREFUSED ::1:9092 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafkaLogger.ts:32
+[nodemon ./src/index.ts] 17:09:04 [32minfo[39m: [KafkaLogger]: 	INFO [Consumer] Stopped 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafkaLogger.ts:32
+[nodemon ./src/index.ts] 17:09:04 [32minfo[39m: [KafkaLogger]: 	ERROR [Consumer] Restarting the consumer in 350ms 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafkaLogger.ts:32
+[nodemon ./src/index.ts] 17:09:04 [32minfo[39m: [KafkaLogger]: 	INFO [Consumer] Starting 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafkaLogger.ts:32
+[nodemon ./src/index.ts] 17:09:04 [32minfo[39m: [KafkaLogger]: 	ERROR [Connection] Connection error: connect ECONNREFUSED ::1:9092 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafkaLogger.ts:32
+[nodemon ./src/index.ts] 17:09:04 [32minfo[39m: [KafkaLogger]: 	ERROR [BrokerPool] Failed to connect to seed broker, trying another broker from the list: Connection error: connect ECONNREFUSED ::1:9092 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafkaLogger.ts:32
+[nodemon ./src/index.ts] 17:09:04 [32minfo[39m: [KafkaLogger]: 	INFO [Consumer] Starting 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafkaLogger.ts:32
+[nodemon ./src/index.ts] 17:09:04 [32minfo[39m: [KafkaLogger]: 	ERROR [Connection] Connection error: connect ECONNREFUSED ::1:9092 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafkaLogger.ts:32
+[nodemon ./src/index.ts] 17:09:04 [32minfo[39m: [KafkaLogger]: 	ERROR [BrokerPool] Failed to connect to seed broker, trying another broker from the list: Connection error: connect ECONNREFUSED ::1:9092 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafkaLogger.ts:32
+[nodemon ./src/index.ts] 17:09:04 [32minfo[39m: [KafkaLogger]: 	ERROR [Connection] Connection error: connect ECONNREFUSED ::1:9092 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafkaLogger.ts:32
+[nodemon ./src/index.ts] 17:09:04 [32minfo[39m: [KafkaLogger]: 	ERROR [BrokerPool] Failed to connect to seed broker, trying another broker from the list: Connection error: connect ECONNREFUSED ::1:9092 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafkaLogger.ts:32
+[nodemon ./src/index.ts] 17:09:04 [32minfo[39m: [KafkaLogger]: 	ERROR [Connection] Connection error: connect ECONNREFUSED ::1:9092 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafkaLogger.ts:32
+[nodemon ./src/index.ts] 17:09:04 [32minfo[39m: [KafkaLogger]: 	ERROR [BrokerPool] Failed to connect to seed broker, trying another broker from the list: Connection error: connect ECONNREFUSED ::1:9092 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafkaLogger.ts:32
+[nodemon ./src/index.ts] 17:09:05 [32minfo[39m: [KafkaLogger]: 	ERROR [Connection] Connection error: connect ECONNREFUSED ::1:9092 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafkaLogger.ts:32
+[nodemon ./src/index.ts] 17:09:05 [32minfo[39m: [KafkaLogger]: 	ERROR [BrokerPool] Failed to connect to seed broker, trying another broker from the list: Connection error: connect ECONNREFUSED ::1:9092 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafkaLogger.ts:32
+[nodemon ./src/index.ts] 17:09:05 [32minfo[39m: [KafkaLogger]: 	ERROR [Connection] Connection error: connect ECONNREFUSED ::1:9092 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafkaLogger.ts:32
+[nodemon ./src/index.ts] 17:09:05 [32minfo[39m: [KafkaLogger]: 	ERROR [BrokerPool] Failed to connect to seed broker, trying another broker from the list: Connection error: connect ECONNREFUSED ::1:9092 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafkaLogger.ts:32
+[nodemon ./src/index.ts] 17:09:06 [32minfo[39m: [KafkaLogger]: 	ERROR [Connection] Connection error: connect ECONNREFUSED ::1:9092 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafkaLogger.ts:32
+[nodemon ./src/index.ts] 17:09:06 [32minfo[39m: [KafkaLogger]: 	ERROR [BrokerPool] Failed to connect to seed broker, trying another broker from the list: Connection error: connect ECONNREFUSED ::1:9092 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafkaLogger.ts:32
+[nodemon ./src/index.ts] 17:09:07 [32minfo[39m: [KafkaLogger]: 	ERROR [Connection] Connection error: connect ECONNREFUSED ::1:9092 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafkaLogger.ts:32
+[nodemon ./src/index.ts] 17:09:07 [32minfo[39m: [KafkaLogger]: 	ERROR [BrokerPool] Failed to connect to seed broker, trying another broker from the list: Connection error: connect ECONNREFUSED ::1:9092 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafkaLogger.ts:32
+[nodemon ./src/index.ts] 17:09:09 [32minfo[39m: [KafkaLogger]: 	ERROR [Connection] Connection error: connect ECONNREFUSED ::1:9092 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafkaLogger.ts:32
+[nodemon ./src/index.ts] 17:09:09 [32minfo[39m: [KafkaLogger]: 	ERROR [BrokerPool] Failed to connect to seed broker, trying another broker from the list: Connection error: connect ECONNREFUSED ::1:9092 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafkaLogger.ts:32
+onnect to seed broker, trying another broker from the list: Connection error: connect ECONNREFUSED ::1:9092 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafkaLogger.ts:32
+[nodemon ./src/index.ts] 11:07:20 [32minfo[39m: [KafkaLogger]: 	ERROR [Connection] Connection error: connect ECONNREFUSED ::1:9092 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafkaLogger.ts:32
+[nodemon ./src/index.ts] 11:07:20 [32minfo[39m: [KafkaLogger]: 	ERROR [BrokerPool] Failed to connect to seed broker, trying another broker from the list: Connection error: connect ECONNREFUSED ::1:9092 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafkaLogger.ts:32
+[nodemon ./src/index.ts] 11:07:22 [32minfo[39m: [KafkaLogger]: 	ERROR [Connection] Connection error: connect ECONNREFUSED ::1:9092 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafkaLogger.ts:32
+[nodemon ./src/index.ts] 11:07:22 [32minfo[39m: [KafkaLogger]: 	ERROR [BrokerPool] Failed to connect to seed broker, trying another broker from the list: Connection error: connect ECONNREFUSED ::1:9092 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafkaLogger.ts:32
+[nodemon ./src/index.ts] 11:07:22 [32minfo[39m: [Unknown]: 	Process exited 	 /Users/romani/projects/galley/jelly-backend/src/index.ts:100
+[nodemon ./src/index.ts] /Users/romani/projects/galley/jelly-backend/node_modules/kafkajs/src/network/connection.js:210
+[nodemon ./src/index.ts]         const error = new KafkaJSConnectionError(`Connection error: ${e.message}`, {
+[nodemon ./src/index.ts]                       ^
+[nodemon ./src/index.ts] KafkaJSNonRetriableError
+[nodemon ./src/index.ts]   Caused by: KafkaJSConnectionError: Connection error: connect ECONNREFUSED ::1:9092
+[nodemon ./src/index.ts]     at Socket.onError (/Users/romani/projects/galley/jelly-backend/node_modules/kafkajs/src/network/connection.js:210:23)
+[nodemon ./src/index.ts]     ... 4 lines matching cause stack trace ...
+[nodemon ./src/index.ts]     at processTicksAndRejections (node:internal/process/task_queues:82:21) {
+[nodemon ./src/index.ts]   name: 'KafkaJSNumberOfRetriesExceeded',
+[nodemon ./src/index.ts]   retriable: false,
+[nodemon ./src/index.ts]   helpUrl: undefined,
+[nodemon ./src/index.ts]   retryCount: 6,
+[nodemon ./src/index.ts]   retryTime: 10786,
+[nodemon ./src/index.ts]   [cause]: KafkaJSConnectionError: Connection error: connect ECONNREFUSED ::1:9092
+[nodemon ./src/index.ts]       at Socket.onError (/Users/romani/projects/galley/jelly-backend/node_modules/kafkajs/src/network/connection.js:210:23)
+[nodemon ./src/index.ts]       at Socket.emit (node:events:517:28)
+[nodemon ./src/index.ts]       at Socket.emit (node:domain:489:12)
+[nodemon ./src/index.ts]       at emitErrorNT (node:internal/streams/destroy:151:8)
+[nodemon ./src/index.ts]       at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+[nodemon ./src/index.ts]       at processTicksAndRejections (node:internal/process/task_queues:82:21) {
+[nodemon ./src/index.ts]     retriable: true,
+[nodemon ./src/index.ts]     helpUrl: undefined,
+[nodemon ./src/index.ts]     broker: 'localhost:9092',
+[nodemon ./src/index.ts]     code: 'ECONNREFUSED',
+[nodemon ./src/index.ts]     [cause]: undefined
+[nodemon ./src/index.ts]   }
+[nodemon ./src/index.ts] }
+[nodemon ./src/index.ts] [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[nodemon ./src/index.ts] [32m[nodemon] restarting due to changes...[39m
+[nodemon ./src/index.ts] [32m[nodemon] starting `yarn run ts-run ./src/index.ts`[39m
+[nodemon ./src/index.ts] [32m[nodemon] restarting due to changes...[39m
+[nodemon ./src/index.ts] [32m[nodemon] starting `yarn run ts-run ./src/index.ts`[39m
+[nodemon ./src/index.ts] 13:55:57 [32minfo[39m: [KafkaLogger]: 	WARN [undefined] KafkaJS v2.0.0 switched default partitioner. To retain the same partitioning behavior as in previous versions, create the producer with the option "createPartitioner: Partitioners.LegacyPartitioner". See the migration guide at https://kafka.js.org/docs/migration-guide-v2.0.0#producer-new-default-partitioner for details. Silence this warning by setting the environment variable "KAFKAJS_NO_PARTITIONER_WARNING=1" 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafkaLogger.ts:32
+[nodemon ./src/index.ts] 13:56:05 [32minfo[39m: [Unknown]: 	Generated schema version hash f074f5ebd0abc5c176f9f3b2d12d3b1d8e514101 	 /Users/romani/projects/galley/jelly-backend/src/utils/schemaHash.ts:10
+[nodemon ./src/index.ts] Enabling inline tracing for this subgraph. To disable, use ApolloServerPluginInlineTraceDisabled.
+[nodemon ./src/index.ts] 13:56:05 [32minfo[39m: [makeApp]: 	Shutdown token is NOT defined, skipping shutdown endpoint creation 	 /Users/romani/projects/galley/jelly-backend/src/app.ts:184
+[nodemon ./src/index.ts] 13:56:05 [32minfo[39m: [start]: 	Are kafka brokers configured?: true 	 /Users/romani/projects/galley/jelly-backend/src/index.ts:78
+[nodemon ./src/index.ts] 13:56:05 [32minfo[39m: [start]: 	Is dev environment?: true 	 /Users/romani/projects/galley/jelly-backend/src/index.ts:79
+[nodemon ./src/index.ts] 13:56:05 [32minfo[39m: [start]: 	Starting kafka and related components ... 	 /Users/romani/projects/galley/jelly-backend/src/index.ts:81
+[nodemon ./src/index.ts] 13:56:05 [32minfo[39m: [KafkaClient.start]: 	Starting Kafka... 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafka.ts:28
+[nodemon ./src/index.ts] 13:56:05 [32minfo[39m: [AttributesCachePruner.start]: 	Starting AttributesCachePruner... 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/attributesCachePruner.ts:26
+[nodemon ./src/index.ts] 13:56:05 [32minfo[39m: [PoliciesCachePruner.start]: 	Starting PoliciesCachePruner... 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/policiesCachePruner.ts:30
+[nodemon ./src/index.ts] Process successfully started
+[nodemon ./src/index.ts] 13:56:05 [32minfo[39m: [Unknown]: 	Process exited 	 /Users/romani/projects/galley/jelly-backend/src/index.ts:100
+[nodemon ./src/index.ts] Error: listen EADDRINUSE: address already in use :::3002
+[nodemon ./src/index.ts]     at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+[nodemon ./src/index.ts]     at listenInCluster (node:net:1865:12)
+[nodemon ./src/index.ts]     at Server.listen (node:net:1953:7)
+[nodemon ./src/index.ts]     at Function.listen (/Users/romani/projects/galley/jelly-backend/node_modules/express/lib/application.js:635:24)
+[nodemon ./src/index.ts]     at start (/Users/romani/projects/galley/jelly-backend/src/index.ts:50:6)
+[nodemon ./src/index.ts]     at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+[nodemon ./src/index.ts]   code: 'EADDRINUSE',
+[nodemon ./src/index.ts]   errno: -48,
+[nodemon ./src/index.ts]   syscall: 'listen',
+[nodemon ./src/index.ts]   address: '::',
+[nodemon ./src/index.ts]   port: 3002
+[nodemon ./src/index.ts] }
+[nodemon ./src/index.ts] [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[nodemon ./src/index.ts] [32m[nodemon] restarting due to changes...[39m
+[nodemon ./src/index.ts] [32m[nodemon] starting `yarn run ts-run ./src/index.ts`[39m
+[nodemon ./src/index.ts] [32m[nodemon] restarting due to changes...[39m
+[nodemon ./src/index.ts] [32m[nodemon] starting `yarn run ts-run ./src/index.ts`[39m
+[nodemon ./src/index.ts] 14:00:01 [32minfo[39m: [KafkaLogger]: 	WARN [undefined] KafkaJS v2.0.0 switched default partitioner. To retain the same partitioning behavior as in previous versions, create the producer with the option "createPartitioner: Partitioners.LegacyPartitioner". See the migration guide at https://kafka.js.org/docs/migration-guide-v2.0.0#producer-new-default-partitioner for details. Silence this warning by setting the environment variable "KAFKAJS_NO_PARTITIONER_WARNING=1" 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafkaLogger.ts:32
+[nodemon ./src/index.ts] 14:00:08 [32minfo[39m: [Unknown]: 	Generated schema version hash f074f5ebd0abc5c176f9f3b2d12d3b1d8e514101 	 /Users/romani/projects/galley/jelly-backend/src/utils/schemaHash.ts:10
+[nodemon ./src/index.ts] Enabling inline tracing for this subgraph. To disable, use ApolloServerPluginInlineTraceDisabled.
+[nodemon ./src/index.ts] 14:00:08 [32minfo[39m: [makeApp]: 	Shutdown token is NOT defined, skipping shutdown endpoint creation 	 /Users/romani/projects/galley/jelly-backend/src/app.ts:184
+[nodemon ./src/index.ts] 14:00:08 [32minfo[39m: [start]: 	Are kafka brokers configured?: true 	 /Users/romani/projects/galley/jelly-backend/src/index.ts:78
+[nodemon ./src/index.ts] 14:00:08 [32minfo[39m: [start]: 	Is dev environment?: true 	 /Users/romani/projects/galley/jelly-backend/src/index.ts:79
+[nodemon ./src/index.ts] 14:00:08 [32minfo[39m: [start]: 	Starting kafka and related components ... 	 /Users/romani/projects/galley/jelly-backend/src/index.ts:81
+[nodemon ./src/index.ts] 14:00:08 [32minfo[39m: [KafkaClient.start]: 	Starting Kafka... 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafka.ts:28
+[nodemon ./src/index.ts] 14:00:08 [32minfo[39m: [AttributesCachePruner.start]: 	Starting AttributesCachePruner... 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/attributesCachePruner.ts:26
+[nodemon ./src/index.ts] 14:00:08 [32minfo[39m: [PoliciesCachePruner.start]: 	Starting PoliciesCachePruner... 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/policiesCachePruner.ts:30
+[nodemon ./src/index.ts] Process successfully started
+[nodemon ./src/index.ts] 14:00:08 [32minfo[39m: [Unknown]: 	Process exited 	 /Users/romani/projects/galley/jelly-backend/src/index.ts:100
+[nodemon ./src/index.ts] Error: listen EADDRINUSE: address already in use :::3002
+[nodemon ./src/index.ts]     at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+[nodemon ./src/index.ts]     at listenInCluster (node:net:1865:12)
+[nodemon ./src/index.ts]     at Server.listen (node:net:1953:7)
+[nodemon ./src/index.ts]     at Function.listen (/Users/romani/projects/galley/jelly-backend/node_modules/express/lib/application.js:635:24)
+[nodemon ./src/index.ts]     at start (/Users/romani/projects/galley/jelly-backend/src/index.ts:50:6)
+[nodemon ./src/index.ts]     at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+[nodemon ./src/index.ts]   code: 'EADDRINUSE',
+[nodemon ./src/index.ts]   errno: -48,
+[nodemon ./src/index.ts]   syscall: 'listen',
+[nodemon ./src/index.ts]   address: '::',
+[nodemon ./src/index.ts]   port: 3002
+[nodemon ./src/index.ts] }
+[nodemon ./src/index.ts] [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[nodemon ./src/index.ts] [32m[nodemon] restarting due to changes...[39m
+[nodemon ./src/index.ts] [32m[nodemon] starting `yarn run ts-run ./src/index.ts`[39m
+[nodemon ./src/index.ts] [32m[nodemon] restarting due to changes...[39m
+[nodemon ./src/index.ts] [32m[nodemon] starting `yarn run ts-run ./src/index.ts`[39m
+[nodemon ./src/index.ts] 14:00:44 [32minfo[39m: [KafkaLogger]: 	WARN [undefined] KafkaJS v2.0.0 switched default partitioner. To retain the same partitioning behavior as in previous versions, create the producer with the option "createPartitioner: Partitioners.LegacyPartitioner". See the migration guide at https://kafka.js.org/docs/migration-guide-v2.0.0#producer-new-default-partitioner for details. Silence this warning by setting the environment variable "KAFKAJS_NO_PARTITIONER_WARNING=1" 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafkaLogger.ts:32
+[nodemon ./src/index.ts] 14:00:51 [32minfo[39m: [Unknown]: 	Generated schema version hash f074f5ebd0abc5c176f9f3b2d12d3b1d8e514101 	 /Users/romani/projects/galley/jelly-backend/src/utils/schemaHash.ts:10
+[nodemon ./src/index.ts] Enabling inline tracing for this subgraph. To disable, use ApolloServerPluginInlineTraceDisabled.
+[nodemon ./src/index.ts] 14:00:51 [32minfo[39m: [makeApp]: 	Shutdown token is NOT defined, skipping shutdown endpoint creation 	 /Users/romani/projects/galley/jelly-backend/src/app.ts:184
+[nodemon ./src/index.ts] 14:00:51 [32minfo[39m: [start]: 	Are kafka brokers configured?: true 	 /Users/romani/projects/galley/jelly-backend/src/index.ts:78
+[nodemon ./src/index.ts] 14:00:51 [32minfo[39m: [start]: 	Is dev environment?: true 	 /Users/romani/projects/galley/jelly-backend/src/index.ts:79
+[nodemon ./src/index.ts] 14:00:51 [32minfo[39m: [start]: 	Starting kafka and related components ... 	 /Users/romani/projects/galley/jelly-backend/src/index.ts:81
+[nodemon ./src/index.ts] 14:00:51 [32minfo[39m: [KafkaClient.start]: 	Starting Kafka... 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafka.ts:28
+[nodemon ./src/index.ts] 14:00:51 [32minfo[39m: [AttributesCachePruner.start]: 	Starting AttributesCachePruner... 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/attributesCachePruner.ts:26
+[nodemon ./src/index.ts] 14:00:51 [32minfo[39m: [PoliciesCachePruner.start]: 	Starting PoliciesCachePruner... 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/policiesCachePruner.ts:30
+[nodemon ./src/index.ts] Process successfully started
+[nodemon ./src/index.ts] 14:00:51 [32minfo[39m: [Unknown]: 	Process exited 	 /Users/romani/projects/galley/jelly-backend/src/index.ts:100
+[nodemon ./src/index.ts] Error: listen EADDRINUSE: address already in use :::3002
+[nodemon ./src/index.ts]     at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+[nodemon ./src/index.ts]     at listenInCluster (node:net:1865:12)
+[nodemon ./src/index.ts]     at Server.listen (node:net:1953:7)
+[nodemon ./src/index.ts]     at Function.listen (/Users/romani/projects/galley/jelly-backend/node_modules/express/lib/application.js:635:24)
+[nodemon ./src/index.ts]     at start (/Users/romani/projects/galley/jelly-backend/src/index.ts:50:6)
+[nodemon ./src/index.ts]     at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+[nodemon ./src/index.ts]   code: 'EADDRINUSE',
+[nodemon ./src/index.ts]   errno: -48,
+[nodemon ./src/index.ts]   syscall: 'listen',
+[nodemon ./src/index.ts]   address: '::',
+[nodemon ./src/index.ts]   port: 3002
+[nodemon ./src/index.ts] }
+[nodemon ./src/index.ts] [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[nodemon ./src/index.ts] [32m[nodemon] restarting due to changes...[39m
+[nodemon ./src/index.ts] [32m[nodemon] starting `yarn run ts-run ./src/index.ts`[39m
+[nodemon ./src/index.ts] [32m[nodemon] restarting due to changes...[39m
+[nodemon ./src/index.ts] [32m[nodemon] starting `yarn run ts-run ./src/index.ts`[39m
+[nodemon ./src/index.ts] 14:07:32 [32minfo[39m: [KafkaLogger]: 	WARN [undefined] KafkaJS v2.0.0 switched default partitioner. To retain the same partitioning behavior as in previous versions, create the producer with the option "createPartitioner: Partitioners.LegacyPartitioner". See the migration guide at https://kafka.js.org/docs/migration-guide-v2.0.0#producer-new-default-partitioner for details. Silence this warning by setting the environment variable "KAFKAJS_NO_PARTITIONER_WARNING=1" 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafkaLogger.ts:32
+[nodemon ./src/index.ts] 14:07:38 [32minfo[39m: [Unknown]: 	Generated schema version hash f074f5ebd0abc5c176f9f3b2d12d3b1d8e514101 	 /Users/romani/projects/galley/jelly-backend/src/utils/schemaHash.ts:10
+[nodemon ./src/index.ts] Enabling inline tracing for this subgraph. To disable, use ApolloServerPluginInlineTraceDisabled.
+[nodemon ./src/index.ts] 14:07:39 [32minfo[39m: [makeApp]: 	Shutdown token is NOT defined, skipping shutdown endpoint creation 	 /Users/romani/projects/galley/jelly-backend/src/app.ts:184
+[nodemon ./src/index.ts] 14:07:39 [32minfo[39m: [start]: 	Are kafka brokers configured?: true 	 /Users/romani/projects/galley/jelly-backend/src/index.ts:78
+[nodemon ./src/index.ts] 14:07:39 [32minfo[39m: [start]: 	Is dev environment?: true 	 /Users/romani/projects/galley/jelly-backend/src/index.ts:79
+[nodemon ./src/index.ts] 14:07:39 [32minfo[39m: [start]: 	Starting kafka and related components ... 	 /Users/romani/projects/galley/jelly-backend/src/index.ts:81
+[nodemon ./src/index.ts] 14:07:39 [32minfo[39m: [KafkaClient.start]: 	Starting Kafka... 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafka.ts:28
+[nodemon ./src/index.ts] 14:07:39 [32minfo[39m: [AttributesCachePruner.start]: 	Starting AttributesCachePruner... 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/attributesCachePruner.ts:26
+[nodemon ./src/index.ts] 14:07:39 [32minfo[39m: [PoliciesCachePruner.start]: 	Starting PoliciesCachePruner... 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/policiesCachePruner.ts:30
+[nodemon ./src/index.ts] Process successfully started
+[nodemon ./src/index.ts] 14:07:39 [32minfo[39m: [Unknown]: 	Process exited 	 /Users/romani/projects/galley/jelly-backend/src/index.ts:100
+[nodemon ./src/index.ts] Error: listen EADDRINUSE: address already in use :::3002
+[nodemon ./src/index.ts]     at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+[nodemon ./src/index.ts]     at listenInCluster (node:net:1865:12)
+[nodemon ./src/index.ts]     at Server.listen (node:net:1953:7)
+[nodemon ./src/index.ts]     at Function.listen (/Users/romani/projects/galley/jelly-backend/node_modules/express/lib/application.js:635:24)
+[nodemon ./src/index.ts]     at start (/Users/romani/projects/galley/jelly-backend/src/index.ts:50:6)
+[nodemon ./src/index.ts]     at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+[nodemon ./src/index.ts]   code: 'EADDRINUSE',
+[nodemon ./src/index.ts]   errno: -48,
+[nodemon ./src/index.ts]   syscall: 'listen',
+[nodemon ./src/index.ts]   address: '::',
+[nodemon ./src/index.ts]   port: 3002
+[nodemon ./src/index.ts] }
+[nodemon ./src/index.ts] [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[nodemon ./src/index.ts] [32m[nodemon] restarting due to changes...[39m
+[nodemon ./src/index.ts] [32m[nodemon] starting `yarn run ts-run ./src/index.ts`[39m
+[nodemon ./src/index.ts] [32m[nodemon] restarting due to changes...[39m
+[nodemon ./src/index.ts] [32m[nodemon] starting `yarn run ts-run ./src/index.ts`[39m
+[nodemon ./src/index.ts] 14:12:15 [32minfo[39m: [KafkaLogger]: 	WARN [undefined] KafkaJS v2.0.0 switched default partitioner. To retain the same partitioning behavior as in previous versions, create the producer with the option "createPartitioner: Partitioners.LegacyPartitioner". See the migration guide at https://kafka.js.org/docs/migration-guide-v2.0.0#producer-new-default-partitioner for details. Silence this warning by setting the environment variable "KAFKAJS_NO_PARTITIONER_WARNING=1" 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafkaLogger.ts:32
+[nodemon ./src/index.ts] 14:12:22 [32minfo[39m: [Unknown]: 	Generated schema version hash f074f5ebd0abc5c176f9f3b2d12d3b1d8e514101 	 /Users/romani/projects/galley/jelly-backend/src/utils/schemaHash.ts:10
+[nodemon ./src/index.ts] Enabling inline tracing for this subgraph. To disable, use ApolloServerPluginInlineTraceDisabled.
+[nodemon ./src/index.ts] 14:12:22 [32minfo[39m: [makeApp]: 	Shutdown token is NOT defined, skipping shutdown endpoint creation 	 /Users/romani/projects/galley/jelly-backend/src/app.ts:184
+[nodemon ./src/index.ts] 14:12:22 [32minfo[39m: [start]: 	Are kafka brokers configured?: true 	 /Users/romani/projects/galley/jelly-backend/src/index.ts:78
+[nodemon ./src/index.ts] 14:12:22 [32minfo[39m: [start]: 	Is dev environment?: true 	 /Users/romani/projects/galley/jelly-backend/src/index.ts:79
+[nodemon ./src/index.ts] 14:12:22 [32minfo[39m: [start]: 	Starting kafka and related components ... 	 /Users/romani/projects/galley/jelly-backend/src/index.ts:81
+[nodemon ./src/index.ts] 14:12:22 [32minfo[39m: [KafkaClient.start]: 	Starting Kafka... 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafka.ts:28
+[nodemon ./src/index.ts] 14:12:22 [32minfo[39m: [AttributesCachePruner.start]: 	Starting AttributesCachePruner... 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/attributesCachePruner.ts:26
+[nodemon ./src/index.ts] 14:12:22 [32minfo[39m: [PoliciesCachePruner.start]: 	Starting PoliciesCachePruner... 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/policiesCachePruner.ts:30
+[nodemon ./src/index.ts] Process successfully started
+[nodemon ./src/index.ts] 14:12:22 [32minfo[39m: [Unknown]: 	Process exited 	 /Users/romani/projects/galley/jelly-backend/src/index.ts:100
+[nodemon ./src/index.ts] Error: listen EADDRINUSE: address already in use :::3002
+[nodemon ./src/index.ts]     at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+[nodemon ./src/index.ts]     at listenInCluster (node:net:1865:12)
+[nodemon ./src/index.ts]     at Server.listen (node:net:1953:7)
+[nodemon ./src/index.ts]     at Function.listen (/Users/romani/projects/galley/jelly-backend/node_modules/express/lib/application.js:635:24)
+[nodemon ./src/index.ts]     at start (/Users/romani/projects/galley/jelly-backend/src/index.ts:50:6)
+[nodemon ./src/index.ts]     at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+[nodemon ./src/index.ts]   code: 'EADDRINUSE',
+[nodemon ./src/index.ts]   errno: -48,
+[nodemon ./src/index.ts]   syscall: 'listen',
+[nodemon ./src/index.ts]   address: '::',
+[nodemon ./src/index.ts]   port: 3002
+[nodemon ./src/index.ts] }
+[nodemon ./src/index.ts] [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[nodemon ./src/index.ts] [32m[nodemon] restarting due to changes...[39m
+[nodemon ./src/index.ts] [32m[nodemon] starting `yarn run ts-run ./src/index.ts`[39m
+[nodemon ./src/index.ts] [32m[nodemon] restarting due to changes...[39m
+[nodemon ./src/index.ts] [32m[nodemon] starting `yarn run ts-run ./src/index.ts`[39m
+[nodemon ./src/index.ts] 16:55:55 [32minfo[39m: [KafkaLogger]: 	WARN [undefined] KafkaJS v2.0.0 switched default partitioner. To retain the same partitioning behavior as in previous versions, create the producer with the option "createPartitioner: Partitioners.LegacyPartitioner". See the migration guide at https://kafka.js.org/docs/migration-guide-v2.0.0#producer-new-default-partitioner for details. Silence this warning by setting the environment variable "KAFKAJS_NO_PARTITIONER_WARNING=1" 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafkaLogger.ts:32
+[nodemon ./src/index.ts] 16:56:02 [32minfo[39m: [Unknown]: 	Generated schema version hash f074f5ebd0abc5c176f9f3b2d12d3b1d8e514101 	 /Users/romani/projects/galley/jelly-backend/src/utils/schemaHash.ts:10
+[nodemon ./src/index.ts] Enabling inline tracing for this subgraph. To disable, use ApolloServerPluginInlineTraceDisabled.
+[nodemon ./src/index.ts] 16:56:02 [32minfo[39m: [makeApp]: 	Shutdown token is NOT defined, skipping shutdown endpoint creation 	 /Users/romani/projects/galley/jelly-backend/src/app.ts:184
+[nodemon ./src/index.ts] 16:56:02 [32minfo[39m: [start]: 	Are kafka brokers configured?: true 	 /Users/romani/projects/galley/jelly-backend/src/index.ts:78
+[nodemon ./src/index.ts] 16:56:02 [32minfo[39m: [start]: 	Is dev environment?: true 	 /Users/romani/projects/galley/jelly-backend/src/index.ts:79
+[nodemon ./src/index.ts] 16:56:02 [32minfo[39m: [start]: 	Starting kafka and related components ... 	 /Users/romani/projects/galley/jelly-backend/src/index.ts:81
+[nodemon ./src/index.ts] 16:56:02 [32minfo[39m: [KafkaClient.start]: 	Starting Kafka... 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/kafka.ts:28
+[nodemon ./src/index.ts] 16:56:02 [32minfo[39m: [AttributesCachePruner.start]: 	Starting AttributesCachePruner... 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/attributesCachePruner.ts:26
+[nodemon ./src/index.ts] 16:56:02 [32minfo[39m: [PoliciesCachePruner.start]: 	Starting PoliciesCachePruner... 	 /Users/romani/projects/galley/jelly-backend/src/services/kafka/policiesCachePruner.ts:30
+[nodemon ./src/index.ts] Process successfully started
+[nodemon ./src/index.ts] 16:56:02 [32minfo[39m: [Unknown]: 	Process exited 	 /Users/romani/projects/galley/jelly-backend/src/index.ts:100
+[nodemon ./src/index.ts] Error: listen EADDRINUSE: address already in use :::3002
+[nodemon ./src/index.ts]     at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+[nodemon ./src/index.ts]     at listenInCluster (node:net:1865:12)
+[nodemon ./src/index.ts]     at Server.listen (node:net:1953:7)
+[nodemon ./src/index.ts]     at Function.listen (/Users/romani/projects/galley/jelly-backend/node_modules/express/lib/application.js:635:24)
+[nodemon ./src/index.ts]     at start (/Users/romani/projects/galley/jelly-backend/src/index.ts:50:6)
+[nodemon ./src/index.ts]     at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+[nodemon ./src/index.ts]   code: 'EADDRINUSE',
+[nodemon ./src/index.ts]   errno: -48,
+[nodemon ./src/index.ts]   syscall: 'listen',
+[nodemon ./src/index.ts]   address: '::',
+[nodemon ./src/index.ts]   port: 3002
+[nodemon ./src/index.ts] }
+[nodemon ./src/index.ts] [31m[nodemon] app crashed - waiting for file changes before starting...[39m
